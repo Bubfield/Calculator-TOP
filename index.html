@@ -5,32 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input
-      id="display"
-      type="text"
-      id="display"
-      name="display"
-      placeholder="3 + 2 + 5 + 6"
-    /><br />
-    <button class="regButton">7</button>
-    <button class="regButton">8</button>
-    <button class="regButton">9</button>
-    <button class="regButton">4</button>
-    <button class="regButton">5</button>
-    <button class="regButton">6</button>
-    <button class="regButton">1</button>
-    <button class="regButton">2</button>
-    <button class="regButton">3</button>
-    <button class="regButton">0</button>
-    <button class="regButton">.</button>
-    <button class="divideButton">/</button>
-    <button class="multiplyButton">x</button>
-    <button class="subtractButton">-</button>
-    <button class="addButton">+</button>
-    <button class="equalButton">=</button>
-    <button class="clearButton">clear</button>
+    <div class="big-container">
+      <div class="calculator-container">
+        <div class="input-container">
+          <input
+            id="display"
+            type="text"
+            id="display"
+            name="display"
+            placeholder="0"
+          />
+        </div>
+        <br />
+        <div class="button-container">
+          <div>
+            <button class="clearButton">AC</button>
+            <button class="turnNegButton">+/-</button>
+            <button class="percentageButton">%</button>
+            <button class="operatorButton">/</button>
+          </div>
+          <div>
+            <button class="regButton">7</button>
+            <button class="regButton">8</button>
+            <button class="regButton">9</button>
+            <button class="operatorButton">x</button>
+          </div>
+          <div>
+            <button class="regButton">4</button>
+            <button class="regButton">5</button>
+            <button class="regButton">6</button>
+            <button class="operatorButton">-</button>
+          </div>
+          <div>
+            <button class="regButton">1</button>
+            <button class="regButton">2</button>
+            <button class="regButton">3</button>
+            <button class="operatorButton">+</button>
+          </div>
+          <div class="last-row">
+            <button class="regButton">0</button>
+            <button class="decimalButton">.</button>
+            <button class="equalButton">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
